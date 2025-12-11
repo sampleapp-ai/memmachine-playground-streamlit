@@ -1,0 +1,14 @@
+altair
+pandas
+streamlit
+requests
+python-dotenv
+websocket-client
+requests
+openai
+anthropic
+tiktoken
+pydantic
+boto3
+huggingface_hub
+google-generativeai

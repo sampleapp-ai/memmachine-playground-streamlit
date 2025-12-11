@@ -1,0 +1,71 @@
+/* -- Sidebar width & padding -- */
+section[data-testid="stSidebar"]          { width: 300px !important; }
+section[data-testid="stSidebarContent"]   { width: 300px !important;
+                                            padding: 0.75rem; }
+
+/* -- Title size -- */
+h1 { font-size: 2.1rem !important; margin-bottom: 1rem; }
+
+/* -- Ensure long links wrap inside comparison columns -- */
+div.answer { white-space: pre-wrap; overflow-wrap: anywhere; }
+
+/* Tighten spacing between comparison columns */
+div[data-testid="column"] {
+    padding-left: 0.25rem !important;
+    padding-right: 0.25rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    flex-grow: 1;
+  }
+  
+  /* Align vertical divider better */
+  .vertical-divider {
+    height: 100%;
+    border-left: 1px solid #ccc;
+    margin: 0 0.4rem;
+  }
+
+  /* Enhanced comparison section styling */
+  .comparison-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .comparison-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+  }
+
+  /* Comparison columns styling */
+  .comparison-column {
+    background: rgba(102, 126, 234, 0.05);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+  }
+
+  /* Make primary buttons purple */
+  button[kind="primary"] {
+    background-color: #667eea !important;
+    border-color: #667eea !important;
+  }
+  
+  button[kind="primary"]:hover {
+    background-color: #764ba2 !important;
+    border-color: #764ba2 !important;
+  }
+
+  /* Make success messages purple */
+  div[data-testid="stSuccess"] {
+    background-color: rgba(102, 126, 234, 0.1) !important;
+    border-left-color: #667eea !important;
+  }
+  
+  div[data-testid="stSuccess"] > div {
+    color: #667eea !important;
+  }
